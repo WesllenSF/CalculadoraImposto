@@ -1,0 +1,27 @@
+.conteudo{
+    border-radius: 20px;
+    padding: 3%;
+    background-color: #fff;
+}
+.row{
+    margin-top: 7%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #ff6b6b, #ffcc5c, #96ceb4, #6a4c93);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

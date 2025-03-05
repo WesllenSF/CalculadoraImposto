@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposto</title>
+
+    <!-- Link com o node_modules -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+            <!-- Coleta de Valores  -->
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 conteudo">
+
+                    <h3 class="text-center">Calculadora de Imposto</h3>
+
+                    <!-- Input nome do produto -->
+                    <label>Nome do Produto: </label> 
+                    <input type="text" class="form-control" id="campoNome" placeholder="Ex.: Notebook" required>
+
+                    <!-- Input do valor do Produto -->
+                    <label class="mt-2">Valor do Produto: </label>
+                    <input type="number" class="form-control" id="campoValorProduto" placeholder="Ex.: 1000" required>
+
+                    <!-- input do valor do Imposto -->
+                    <label class="mt-2">Valor do Imposto %: </label>
+                    <input type="number" class="form-control" id="campoImposto" required>
+
+                    <!-- Botão de Calcular -->
+                    <button class="btn btn-outline-success form-control mt-4 mb-4" type="submit" id="calc">Calcular</button>
+
+
+                    <!-- Exibição do nome do produto -->
+                    <h4>Nome do Produto: <span id="nome"> </span></h4>
+                    
+                    <!-- Exibição do valor do produto com o imposto -->
+                    <h4>Produto + Imposto: <span id="comImposto"> </span></h4>
+
+                </div>
+            </div>
+    </div>
+
+    <!-- link com JS -->
+    <script src="./js/produto.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
